@@ -22,6 +22,7 @@ body img {
 
 .firstpage {
   position: relative;
+  height: 100svh;
 }
 .firstpage .bg {
   width: 100%;
@@ -68,14 +69,94 @@ body img {
 }
 .firstpage article button {
   display: block;
+  padding: 12px 60px;
   width: 100%;
-  padding: 12px 16px;
   font-size: 16px;
   background: #fff;
   color: #000;
   margin-top: 12px;
   border-radius: 2px;
   font-weight: bold;
+}
+
+.model-y {
+  position: relative;
+  height: 100vh;
+}
+.model-y img {
+  width: 100%;
+  height: 100%;
+}
+.model-y .top {
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  color: #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  flex-direction: column;
+}
+.model-y .top h1 {
+  font-size: 28px;
+}
+.model-y .top strong {
+  display: block;
+  font-size: 20px;
+}
+.model-y .bottom {
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  flex-direction: column;
+}
+.model-y .bottom .btns {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  gap: 12px;
+}
+.model-y .bottom .btns .shop-btn {
+  display: block;
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  color: var(--teslaColor);
+  width: 100%;
+  padding: 14px 88px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 2px;
+}
+.model-y .bottom .btns .demo-btn {
+  display: block;
+  background: var(--teslaColor);
+  color: #fff;
+  width: 100%;
+  padding: 14px 88px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 2px;
+}
+.model-y .bottom p {
+  font-size: 12px;
+  padding: 4px 12px;
+}
+
+@media screen and (min-width: 767px) {
+  .model-y {
+    height: auto;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */
